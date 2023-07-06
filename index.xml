@@ -565,16 +565,18 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
        <a href='https://www.sman4muarateweh.sch.id/2023/05/profil.html' itemprop='url'><span itemprop='name'>&#9839; profil</span></a>
      </li>
 
-              <li>
-       <a href='https://kalteng.siap-ppdb.com/' itemprop='url'><span itemprop='name'>&#177; PPDB</span></a>
-     </li>
 
-         <li>
-       <a href='https://www.sman4muarateweh.sch.id/2023/01/lainnya.html' itemprop='url'><span itemprop='name'>&#9178; lainnya</span></a>
+            <li>
+       <a href='https://www.sman4muarateweh.sch.id/2023/07/pengumuman-calon-peserta-didik-baru.html' itemprop='url'><span itemprop='name'>&#177; PPDB</span></a>
      </li>
      
 
-   
+
+
+    <li>
+       <a href='https://www.sman4muarateweh.sch.id/2023/01/lainnya.html' itemprop='url'><span itemprop='name'>&#9178; lainnya</span></a>
+     </li>
+     
    
 
    </ul>
@@ -1800,6 +1802,43 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
   
  
   
+<style>
+  .footer {
+    /* Sticky footer styles */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height as desired */
+
+  }
+  
+  .footer-button {
+    /* Button styles */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0096FF;
+    color: #fff; /* Replace with your preferred text color */
+    border-radius: 5px;
+    text-decoration: none;
+    /* Add any other styles as desired */
+  
+  }
+</style>
+
+<![CDATA[
+  // JavaScript code for the footer functionality
+  window.onload = function() {
+    var footer = document.getElementsByClassName('footer')[0];
+    var wrapper = document.getElementsByClassName('wrapper')[0];
+    var footerHeight = footer.offsetHeight + 'px';
+    wrapper.style.minHeight = 'calc(100vh - ' + footerHeight + ')';
+  };
+]]>
+
+
+<div class='footer'>
+ &#177; Halo,untuk hasil PPDB &gt;_ <a class='footer-button' href='https://www.sman4muarateweh.sch.id/2023/07/pengumuman-calon-peserta-didik-baru.html?m=1'>klik disini</a>
+</div>
  
   
   <br/>  <br/>
