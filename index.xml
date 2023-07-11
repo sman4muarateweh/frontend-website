@@ -567,7 +567,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 
 
             <li>
-       <a href='https://www.sman4muarateweh.sch.id/2023/07/pengumuman-calon-peserta-didik-baru.html' itemprop='url'><span itemprop='name'>&#177; PPDB</span></a>
+       <a href='https://www.sman4muarateweh.sch.id/2023/07/susunan-acara-masa-pengenalan.html' itemprop='url'><span itemprop='name'>&#177; MPLS 2023</span></a>
      </li>
      
 
@@ -1796,7 +1796,9 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
      <a href='https://www.youtube.com/@sman4muarateweh'><img alt='logo_youtube_sman4muarateweh' height='34' src='https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png' width='34'/></a>
   
   <a href='https://www.tiktok.com/@sman4muarateweh'><img alt='logo_douyin_sman4muarateweh' height='34' src='https://pngimg.com/uploads/tiktok/tiktok_PNG7.png' width='34'/></a>
+  <a href='https://threads.net/@titian.ilmu'><img alt='logo_douyin_sman4muarateweh' height='34' src='https://play-lh.googleusercontent.com/G6jK9S77RN0laf9_6nhDo3AVxbRP9SgMmt8ZmQjKQ2hibn9xhOY-W5YFn_7stJD1CA=w240-h480-rw' width='34'/></a>
   
+ 
   <br/>  
   
   
@@ -1837,7 +1839,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 
 
 <div class='footer'>
- &#177; Halo,untuk hasil PPDB &gt;_ <a class='footer-button' href='https://www.sman4muarateweh.sch.id/2023/07/pengumuman-calon-peserta-didik-baru.html?m=1'>klik disini</a>
+ &#177; untuk jadwal kegiatan MPLS &gt;_ <a class='footer-button' href='https://www.sman4muarateweh.sch.id/2023/07/susunan-acara-masa-pengenalan.html'>klik disini</a>
 </div>
  
   
