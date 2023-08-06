@@ -566,12 +566,17 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
      </li>
 
 
-            <li>
-       <a href='https://www.sman4muarateweh.sch.id/2023/07/susunan-acara-masa-pengenalan.html' itemprop='url'><span itemprop='name'>&#177; MPLS 2023</span></a>
+           <li>
+       <a href='https://www.sman4muarateweh.sch.id/2023/08/jadwal-belajar-kelas-20232024-rev4.html' itemprop='url'><span itemprop='name'>? jadwal</span></a>
+     </li>
+
+         <li>
+       <a href='https://www.sman4muarateweh.sch.id/2022/12/ekskul-ektrakurikuler-sman-4-muara-teweh.html' itemprop='url'><span itemprop='name'>&#8984; ekskul</span></a>
      </li>
      
-
-
+<li>
+       <a href='https://www.sman4muarateweh.sch.id/search/label/buku' itemprop='url'><span itemprop='name'>🕮 buku</span></a>
+     </li>
 
     <li>
        <a href='https://www.sman4muarateweh.sch.id/2023/01/lainnya.html' itemprop='url'><span itemprop='name'>&#9178; lainnya</span></a>
@@ -1839,10 +1844,9 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 
 
 <div class='footer'>
- &#177; untuk jadwal kegiatan MPLS &gt;_ <a class='footer-button' href='https://www.sman4muarateweh.sch.id/2023/07/susunan-acara-masa-pengenalan.html'>klik disini</a>
+ &#177; untuk buku digital &gt;_ <a class='footer-button' href='https://www.sman4muarateweh.sch.id/2023/03/mohon-maafmasih-dalam-peremajaancoba.html'>klik disini</a>
 </div>
- 
-  
+
   <br/>  <br/>
   <img src='https://moe-counter.glitch.me/get/@:sman4muarateweh?theme=rule34' width='30%'/>
     <br/>
