@@ -1234,7 +1234,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
                      <a expr:href='data:post.url' expr:title='data:post.title'><img expr:alt='data:post.title' expr:src='data:post.firstImageUrl' expr:title='data:post.title' itemprop='image'/></a>
                      <b:else/>
                      <a expr:href='data:post.url' expr:title='data:post.title'>
-                        <div class='postthumb'><img expr:alt='data:post.title' expr:title='data:post.title' itemprop='image' src='https://blogger.googleusercontent.com/img/a/AVvXsEi_kKEmgjyfG6YEB-Q9nXLMq7lS-mm4OZBlVqIpcIi748iTLKWmEna1PRKpL-L9uF3Kgd2BR5e93TkrrEshbBGP2kfo2FnUUz-Y00jy0KxpjTV8PJRQl-KJ2bNlNc9mBjSWv9d7rs4sBKhjfexnHa47R_TQbnkG0im9U7ModTWMhul_l43_uWDM9RTdcQ=s300'/></div>
+                        <div class='postthumb'><img expr:alt='data:post.title' expr:title='data:post.title' itemprop='image' src='https://raw.githubusercontent.com/sman4muarateweh/xml_site_theme/main/no_image.png'/></div>
                      </a>
                   </b:if>
                </b:if>
