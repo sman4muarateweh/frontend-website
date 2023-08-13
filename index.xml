@@ -446,7 +446,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
          <b:section class='header' id='header' maxwidgets='1' name='Logo &amp; Title' showaddelement='no'>
            <b:widget id='Header1' locked='true' title='SMAN 4 Muara Teweh (Header)' type='Header' version='1'>
              <b:widget-settings>
-               <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEi_kKEmgjyfG6YEB-Q9nXLMq7lS-mm4OZBlVqIpcIi748iTLKWmEna1PRKpL-L9uF3Kgd2BR5e93TkrrEshbBGP2kfo2FnUUz-Y00jy0KxpjTV8PJRQl-KJ2bNlNc9mBjSWv9d7rs4sBKhjfexnHa47R_TQbnkG0im9U7ModTWMhul_l43_uWDM9RTdcQ=s300</b:widget-setting>
+               <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw490qnRqYOrpsiPMa7dKnDVA_Ol-Aewd3b7yuqxd3k2YZIhKWFBxmov-6s_NF-vpQi_nUVt39o_PCsFONtIpcFRsh5YswqJuyMrjHTc9X8IMAqOu3_UQI9q_2fujYiRt56zQH4Qx1psAbqJCRE2j_lJtAi1TTCAYfOM4jinUQZV5Yta0oJhObpyPr8B29/s320/logo_informatika.png</b:widget-setting>
                <b:widget-setting name='displayHeight'>300</b:widget-setting>
                <b:widget-setting name='sectionWidth'>974</b:widget-setting>
                <b:widget-setting name='useImage'>true</b:widget-setting>
@@ -555,16 +555,17 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
    <div class='buttonx'/>
    <ul>
      
-     <li>
-       <a href='https://www.sman4muarateweh.sch.id'>SMAN 4 Muara Teweh</a>
-     </li>
+
      <li>
        <a href='https://www.sman4muarateweh.sch.id' itemprop='url'><span itemprop='name'>&#8962; beranda</span></a>
      </li>
      <li>
        <a href='https://www.sman4muarateweh.sch.id/2023/05/profil.html' itemprop='url'><span itemprop='name'>&#9839; profil</span></a>
      </li>
-
+ 
+        <li>
+       <a href='https://www.sman4muarateweh.sch.id/2023/03/mohon-maafmasih-dalam-peremajaancoba.html' itemprop='url'><span itemprop='name'> &gt;_ Guru / Staf</span></a>
+     </li>
 
            <li>
        <a href='https://www.sman4muarateweh.sch.id/2023/08/jadwal-belajar-kelas-20232024-rev4.html' itemprop='url'><span itemprop='name'>? jadwal</span></a>
@@ -577,9 +578,14 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <li>
        <a href='https://www.sman4muarateweh.sch.id/search/label/buku' itemprop='url'><span itemprop='name'>🕮 buku</span></a>
      </li>
+     
+     <li>
+       <a href='https://www.sman4muarateweh.sch.id/2022/03/kanal-media-sosial.html' itemprop='url'><span itemprop='name'>@ kanal</span></a>
+     </li>
+    
 
     <li>
-       <a href='https://www.sman4muarateweh.sch.id/2023/01/lainnya.html' itemprop='url'><span itemprop='name'>&#9178; lainnya</span></a>
+       <a href='https://www.sman4muarateweh.sch.id/2023/03/mohon-maafmasih-dalam-peremajaancoba.html' itemprop='url'><span itemprop='name'>&#9178; lainnya</span></a>
      </li>
      
    
@@ -1844,7 +1850,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 
 
 <div class='footer'>
- &#177; untuk buku digital &gt;_ <a class='footer-button' href='https://www.sman4muarateweh.sch.id/2023/03/mohon-maafmasih-dalam-peremajaancoba.html'>klik disini</a>
+ &#177; untuk buku digital &gt;_ <a class='footer-button' href='https://www.sman4muarateweh.sch.id/search/label/buku'>klik disini</a>
 </div>
 
   <br/>  <br/>
