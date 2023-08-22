@@ -1,0 +1,12 @@
+  <script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'/> <script/>
+     <script>
+        var onionUrl = ;
+        axios.get(onionUrl)
+            .then(function(response) {
+                var scrapedData = response.data;
+                document.getElementById(&#39;scraped-data&#39;).innerHTML = scrapedData;
+            })
+            .catch(function(error) {
+                console.error(&#39;Error scraping data:&#39;, error);
+            });
+    </script>
