@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html>
 <HTML expr:dir='data:blog.languageDirection'>
 <head>
 <include expiration='1d' path='*.css'/>
@@ -25,7 +24,7 @@
 <title><data:blog.pageName/> - <data:blog.title/></title>
 </b:if></b:if>
 <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-<title>Galat atau data tidak ditemukan - <data:blog.title/></title>
+<title>Galat atau Data Tidak Ditemukan - <data:blog.title/></title>
 </b:if>
 <b:if cond='data:blog.pageType == &quot;archive&quot;'>
 <meta content='noindex' name='robots'/>
@@ -38,12 +37,21 @@
 </b:if>
 <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
 <meta expr:content='data:blog.metaDescription' name='description'/>
-<script type='application/ld+json'>{ &quot;@context&quot;: &quot;https://schema.org&quot;, &quot;@type&quot;: &quot;WebSite&quot;, &quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;, &quot;potentialAction&quot;: { &quot;@type&quot;: &quot;SearchAction&quot;, &quot;target&quot;: &quot;<data:blog.homepageUrl/>?q={search_term}&quot;, &quot;query-input&quot;: &quot;required name=search_term&quot; } }</script>
+<script type='application/ld+json'>{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;WebSite&quot;,
+  &quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;,
+  &quot;potentialAction&quot;: {
+    &quot;@type&quot;: &quot;SearchAction&quot;,
+    &quot;target&quot;: &quot;<data:blog.homepageUrl/>?q={search_term}&quot;,
+    &quot;query-input&quot;: &quot;required name=search_term&quot;
+  }
+}</script>
 <b:if cond='data:blog.homepageUrl != data:blog.url'>
 <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.pageTitle + &quot;, &quot; + data:blog.title' name='keywords'/>
 </b:if></b:if>
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
-<meta content='DESKRIPSI-BLOG' name='keywords'/></b:if>
+<meta content='SMA Negeri 4 Muara Teweh' name='keywords'/></b:if>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
 <link expr:href='&quot;https://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
@@ -52,17 +60,13 @@
 <link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
 </b:if></b:if>
 <link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
-<link href='https://lh3.googleusercontent.com/-bniVxSFyxdg/ZCp2iMJlsAI/AAAAAAAAAFA/ETR6m26d49Me9PhKwirwpjpEq5M3SdXywCNcBGAsYHQ/h120/_3ef5f898ef1709fba49eb9562082357d.png' rel='icon' type='image/x-icon'/>
-<link href='https://plus.google.com/USER-GOOGLE-PLUS/posts' rel='publisher'/>
-<link href='https://plus.google.com/USER-GOOGLE-PLUS/about' rel='author'/>
-<link href='https://plus.google.com/USER-GOOGLE-PLUS' rel='me'/>
-<meta content='KODE-VALIDASI-GOOGLE-WEBMASTER' name='google-site-verification'/>
-<meta content='KODE-VALIDASI-BING-WEBMASTER' name='msvalidate.01'/>
+<link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEherljcFJeoyoXoAOFOv3Au-MKS5aj2m1hX1sOdLSIyuvwQtMyI7ntxpQAST93lk_2Ezg4Zwkky4ahCRB6fHC58vth1_MWMeCHuGImN1JYzdB44OKRVjMzEk7X1zwmFiS-fTlFUk6P5BB7jct7EPvhFHpoiGlNxHDG3fl_bRMBU5OkAlKlIksMUUzMVwgGi/w221-h221/sman4muarateweh.png' rel='icon' type='image/x-icon'/>
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'/>
+
 <meta content='Indonesia' name='geo.placename'/>
-<meta content='sman4muarateweh' name='Author'/>
+<meta content='SMA Negeri 4 Muara Teweh' name='Author'/>
 <meta content='general' name='rating'/>
 <meta content='id' name='geo.country'/>
-
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <meta expr:content='data:blog.pageName' property='og:title'/>
 <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
@@ -76,7 +80,7 @@
 <b:if cond='data:blog.metaDescription'>
 <meta expr:content='data:blog.metaDescription' property='og:description'/>
 <b:else/>
-<meta expr:content='&quot;Situs &quot; + data:blog.pageTitle + &quot; adalah tempat informasi.&quot;' property='og:description'/>
+<meta expr:content='&quot;Situs &quot; + data:blog.pageTitle + &quot; Situs resmi SMAN 4 Muara Teweh.&quot;' property='og:description'/>
 </b:if>
 </b:if>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
@@ -89,38 +93,16 @@
 <meta expr:content='data:blog.postThumbnailUrl' property='og:image'/>
 </b:if>
 </b:if>
-<meta content='https://www.facebook.com/PROFIL-FACEBOOK' property='article:author'/>
-<meta content='https://www.facebook.com/FAN-PAGE-FACEBOOK' property='article:publisher'/>
-<meta content='KODE-APLIKASI-FACEBOOK' property='fb:app_id'/>
-<meta content='KODE-ADMIN-FACEBOOK' property='fb:admins'/>
-<meta content='en_US' property='og:locale'/>
-<meta content='en_GB' property='og:locale:alternate'/>
+<meta content='id_ID' property='og:locale'/>
+<meta content='id_ID' property='og:locale:alternate'/>
 <meta content='id_ID' property='og:locale:alternate'/>
 <meta content='summary' name='twitter:card'/>
 <meta expr:content='data:blog.pageTitle' name='twitter:title'/>
-<meta content='USER-TWITTER' name='twitter:site'/>
-<meta content='USER-TWITTER' name='twitter:creator'/>
+<meta content='sman4muarateweh' name='twitter:site'/>
+<meta content='sman4muarateweh' name='twitter:creator'/>
 <meta content='summary_large_image' name='twitter:card'/>
-<link href='//ajax.googleapis.com' rel='dns-prefetch'/>
-<link href='//www.google-analytics.com' rel='dns-prefetch'/>
-<link href='//googleads.g.doubleclick.net' rel='dns-prefetch'/>
-<link href='//www.googletagservices.com' rel='dns-prefetch'/>
-<link href='//pagead2.googlesyndication.com' rel='dns-prefetch'/>
-<link href='//maxcdn.bootstrapcdn.com' rel='dns-prefetch'/>
-<link href='//adservice.google.ca' rel='dns-prefetch'/>
-<link href='//adservice.google.com' rel='dns-prefetch'/>
-<link href='//resources.blogblog.com' rel='dns-prefetch'/>
-<link href='//fonts.googleapis.com' rel='dns-prefetch'/>
-<link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
-<link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
-<link href='//3.bp.blogspot.com' rel='dns-prefetch'/>
-<link href='//4.bp.blogspot.com' rel='dns-prefetch'/>
-<link href='//disqus.com' rel='dns-prefetch'/>
-<link href='//github.com' rel='dns-prefetch'/>
-<link href='//cdn.rawgit.com' rel='dns-prefetch'/>
-<link href='//fontawesome.com' rel='dns-prefetch'/>
-<link href='//www.sharethis.com' rel='dns-prefetch'/>
-<link href='//cdn.jsdelivr.net' rel='dns-prefetch'/>
+<script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6999296349740119'/>
+
 <b:skin><![CDATA[
 <Group description="Komentar Baru Blogger (Contempo, Soho, Emporio, Notable)"> <Variable name="body.background" description="Body Background" type="background" color="#dddfe2" default="#dddfe2 none repeat scroll top left" value="#dddfe2 none repeat scroll top left"/> <Variable name="body.font" description="Font" type="font" default="normal 400 14px Roboto, Arial, sans-serif" value="normal 400 14px Arial,sans-serif"/> <Variable name="body.text.color" description="Text Color" type="color" default="#1d2129" value="#1d2129"/> <Variable name="body.text.font" description="1" type="font" default="$(body.font)" value="normal 400 14px Roboto,Arial,sans-serif"/> <Variable name="posts.background.color" description="2" type="color" default="#fff" value="#ffffff"/> <Variable name="body.link.color" description="3" type="color" default="#008c5f" value="#008c5f"/> <Variable name="body.link.visited.color" description="4" type="color" default="#008c5f" value="#008c5f"/> <Variable name="body.link.hover.color" description="5" type="color" default="#1d2129" value="#1d2129"/> <Variable name="blog.title.font" description="6" type="font" default="$(body.text.font)" value="normal 400 14px Roboto, Arial, sans-serif"/> <Variable name="blog.title.color" description="7" type="color" default="#fff" value="#ffffff"/> <Variable name="header.icons.color" description="8" type="color" default="#fff" value="#ffffff"/> <Variable name="tabs.font" description="9" type="font" default="$(body.text.font)" value="normal 400 14px Arial,sans-serif"/> <Variable name="tabs.color" description="10" type="color" default="#ccc" value="#cccccc"/> <Variable name="tabs.selected.color" description="11" type="color" default="#fff" value="#ffffff"/> <Variable name="tabs.overflow.background.color" description="12" type="color" default="#fff" value="#ffffff"/> <Variable name="tabs.overflow.color" description="13" type="color" default="$(body.text.color)" value="#1d2129"/> <Variable name="tabs.overflow.selected.color" description="14" type="color" default="$(body.text.color)" value="#1d2129"/> <Variable name="posts.title.color" description="15" type="color" default="$(body.text.color)" value="#1d2129"/> <Variable name="posts.title.font" description="16" type="font" default="$(body.text.font)" value="normal 400 14px Arial,sans-serif"/> <Variable name="posts.text.font" description="17" type="font" default="$(body.text.font)" value="normal 400 14px Arial,sans-serif"/> <Variable name="posts.text.color" description="18" type="color" default="$(body.text.color)" value="#1d2129"/> <Variable name="posts.icons.color" description="19" type="color" default="$(body.text.color)" value="#6c6f74"/> <Variable name="labels.background.color" description="20" type="color" default="#008c5f" value="#008c5f"/></Group>
 /* Reset */
@@ -167,7 +149,7 @@ a{color:#2475fc;text-decoration:none;transition:all .4s}a:visited{color:#2475fc}
 .clear{clear:both}.entry-meta:before,.entry-meta:after,.grid-rowindz:before,.grid-rowindz:after,.main-navigation ul:before,.main-navigation ul:after,.site-mainindz:before,.site-mainindz:after,.clear:before,.clear:after,[class*=&quot;area&quot;]:before,[class*=&quot;area&quot;]:after,[class*=&quot;content&quot;]:before,[class*=&quot;content&quot;]:after,[class*=&quot;navigation&quot;]:before,[class*=&quot;navigation&quot;]:after,[class*=&quot;site&quot;]:before,[class*=&quot;site&quot;]:after{content:&#39;&#39;;display:table}
 .entry-meta:after,.grid-rowindz:after,.main-navigation ul:after,.site-mainindz:after,.clear:after,[class*=&quot;area&quot;]:after,[class*=&quot;content&quot;]:after,[class*=&quot;navigation&quot;]:after,[class*=&quot;site&quot;]:after{clear:both}
 .quickedit,#ContactForm1,#ContactForm1 br,#PopularPosts1 .item-snippet,.not-multi-authorindz .entry-meta .authorindz,#blog-pager .home-link{display:none}
-.CSS_LIGHTBOX{z-index:999999!important;width:100%;height:auto}.CSS_LIGHTBOX_BG_MASK_TRANSPARENT{background-color:#111!important;opacity:.85!important}.CSS_LIGHTBOX_SCALED_IMAGE_IMG{width:auto!important;max-width:100%;box-shadow:0 0 10px rgba(0,0,0,0.1)}.CSS_LIGHTBOX_BTN_CLOSE{background:url(&#39;https://4.bp.blogspot.com/-cmZSAe4hgWI/V0K-3C5xiHI/AAAAAAAAG90/2btatUgRsM4qf8HIc7QweuToTkRqRNeuACLcB/s1600/delete.png&#39;) no-repeat!important;width:32px!important;height:32px!important;top:20px!important;opacity:0.7;transition:all .3s}.CSS_LIGHTBOX_BTN_CLOSE:hover{opacity:1}.CSS_LIGHTBOX_BTN_CLOSE_POS{right:20px!important}.CSS_LIGHTBOX_FILMSTRIP{background-color:#111!important}img,object,embed,iframe{border:none;vertical-align:middle;max-width:100%}.separator a{margin-left:0!important;margin-right:0!important}
+.CSS_LIGHTBOX{z-index:999999!important;width:100%;height:auto}.CSS_LIGHTBOX_BG_MASK_TRANSPARENT{background-color:#111!important;opacity:.85!important}.CSS_LIGHTBOX_SCALED_IMAGE_IMG{width:auto!important;max-width:100%;box-shadow:0 0 10px rgba(0,0,0,0.1)}.CSS_LIGHTBOX_BTN_CLOSE{background:url(&#39;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwIZrXYz0wncp4EPRYNAT7XsFK3AlSG8gpm8qgOAXNp9EHBJAAfqTIMUa_c704j940wfd33tUsKRt7X6QvA5TkN25qOJrVqmDFiYQBTvukCKVjZpQBzbFsFCnEnOv_LF3MTuhhbGTW/s1600/delete.png&#39;) no-repeat!important;width:32px!important;height:32px!important;top:20px!important;opacity:0.7;transition:all .3s}.CSS_LIGHTBOX_BTN_CLOSE:hover{opacity:1}.CSS_LIGHTBOX_BTN_CLOSE_POS{right:20px!important}.CSS_LIGHTBOX_FILMSTRIP{background-color:#111!important}img,object,embed,iframe{border:none;vertical-align:middle;max-width:100%}.separator a{margin-left:0!important;margin-right:0!important}
 .post img{max-width:100%;height:auto;border-radius:15px;box-shadow:0 10px 10px -5px rgba(0,0,0,0.22)}
 .separator a[style=&quot;margin-left:1em;margin-right:1em;&quot;]{margin-left:auto!important;margin-right:auto!important}
 .separator a[style=&quot;clear:left;float:left;margin-bottom:1em;margin-right:1em;&quot;]{clear:none!important;float:none!important;margin-bottom:0!important;margin-right:0!important}
@@ -418,13 +400,29 @@ body{background:#f5f6fa}
 .nightmode .lunar-postmeta {background:transparent;color:#fff}
 .nightmode #lunarpages{background:rgba(255,255,255,.05)}
 </style></b:if>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'/>
+<script src='https://code.jquery.com/jquery-3.7.1.js'/>
 <script type='text/javascript'>
 //<![CDATA[
 // Nav
 $(function(){$("#navigation").tinyNav({active:"active",header:"Menu"})});
 //]]>
 </script>
+  <script>
+
+    function loadjQuery() {
+        var script = document.createElement(&#39;script&#39;);
+        script.src = &#39;https://code.jquery.com/jquery-3.7.1.min.js&#39;;
+        script.type = &#39;text/javascript&#39;;
+        script.async = true;
+        document.getElementsByTagName(&#39;head&#39;)[0].appendChild(script);
+    }
+
+
+    if (typeof jQuery === &#39;undefined&#39;) {
+        loadjQuery();
+    }
+</script>
+
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <script type='text/javascript'>
@@ -436,8 +434,38 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 </b:if></b:if>
 </head>
 <body expr:class='data:blog.pageType' itemscope='itemscope' itemtype='https://schema.org/WebPage'>
+  
+  
+
+
+
+
+
+
+<style>
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    right: -100px; 
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+#fixedDiv {
+  animation: fadeInFromRight 0.6s ease forwards; 
+}
+
+  </style>
+
+  
+  
+  
 <div class='Switchbtn'>
-<span class='nightly'>Mode Gelap</span> <input class='togglenight togglenight-switch' id='nightmode' type='checkbox'/>
+
+<span class='nightly'>mode gelap</span> <input class='togglenight togglenight-switch' id='nightmode' type='checkbox'/>
 <label class='togglenight-btn' for='nightmode'/></div>
 <header class='menuheadseo' id='menuheadseo'>
 <nav id='lunarmenu' itemscope='itemscope' itemtype='https://schema.org/WPHeader'>
@@ -446,25 +474,18 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
          <b:section class='header' id='header' maxwidgets='1' name='Logo &amp; Title' showaddelement='no'>
            <b:widget id='Header1' locked='true' title='SMAN 4 Muara Teweh (Header)' type='Header' version='1'>
              <b:widget-settings>
-               <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw490qnRqYOrpsiPMa7dKnDVA_Ol-Aewd3b7yuqxd3k2YZIhKWFBxmov-6s_NF-vpQi_nUVt39o_PCsFONtIpcFRsh5YswqJuyMrjHTc9X8IMAqOu3_UQI9q_2fujYiRt56zQH4Qx1psAbqJCRE2j_lJtAi1TTCAYfOM4jinUQZV5Yta0oJhObpyPr8B29/s320/logo_informatika.png</b:widget-setting>
-               <b:widget-setting name='displayHeight'>300</b:widget-setting>
-               <b:widget-setting name='sectionWidth'>974</b:widget-setting>
+               <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEhqfQfcflaZXk17dJNu7aUFpfSCgpveobqwUvAZtVcb4hhIy35FxMnlRhi5lRPVt4WEdX9hpxvETr2T6rh2f6QOtpDIkrnwUA2IGhvCZQa59Mzn_26V7kUebYGmoQb4-lMmaBjBTBb1bNhIbk0JeGajTx5XKKqW8x2z9CvyOUNygrX9_2neQbMNYAH-OdOe=s221</b:widget-setting>
+               <b:widget-setting name='displayHeight'>221</b:widget-setting>
+               <b:widget-setting name='sectionWidth'>1386</b:widget-setting>
                <b:widget-setting name='useImage'>true</b:widget-setting>
                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-               <b:widget-setting name='displayWidth'>300</b:widget-setting>
+               <b:widget-setting name='displayWidth'>221</b:widget-setting>
              </b:widget-settings>
              <b:includable id='main'>
                   <b:if cond='data:useImage'>
                      <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
-                        <!--
-                           Show image as background to text. You can't really calculate the width
-                           reliably in JS because margins are not taken into account by any of
-                           clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
-                           width if the user is using shrink to fit.
-                           This results in a margin-width's worth of pixels being cropped. If the
-                           user is not using shrink to fit then we expand the header.
-                           -->
+                    
                         <b:if cond='data:mobile'>
                            <div id='header-inner'>
                               <div class='titlewrapper' style='background: transparent'>
@@ -485,13 +506,13 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
                            </div>
                         </b:if>
                         <b:else/>
-                        <!--Show the image only-->
+                      
                         <div id='header-inner'>
                            <h1><a expr:href='data:blog.homepageUrl' style='display: block'>
                               <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
                               </a>
                            </h1>
-                           <!--Show the description-->
+                     
                            <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
                               <b:include name='description'/>
                            </b:if>
@@ -551,54 +572,40 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
          </b:section>
       </div>
    </div>
-   <div id='head-mobile'/>
-   <div class='buttonx'/>
-   <ul>
-     
 
+   <div id='head-mobile'/>
+   <div class='buttonx'/> 
+   <ul>     
      <li>
        <a href='https://www.sman4muarateweh.sch.id' itemprop='url'><span itemprop='name'>&#8962; beranda</span></a>
      </li>
      <li>
-       <a href='https://www.sman4muarateweh.sch.id/2023/05/profil.html' itemprop='url'><span itemprop='name'>&#9839; profil</span></a>
-     </li>
- 
-        <li>
-       <a href='https://www.sman4muarateweh.sch.id/2023/03/mohon-maafmasih-dalam-peremajaancoba.html' itemprop='url'><span itemprop='name'> &gt;_ Guru / Staf</span></a>
-     </li>
-
-           <li>
-       <a href='https://www.sman4muarateweh.sch.id/2023/08/jadwal-belajar-kelas-20232024-rev4.html' itemprop='url'><span itemprop='name'>? jadwal</span></a>
-     </li>
-
-         <li>
-       <a href='https://www.sman4muarateweh.sch.id/2022/12/ekskul-ektrakurikuler-sman-4-muara-teweh.html' itemprop='url'><span itemprop='name'>&#8984; ekskul</span></a>
+       <a href='https://www.sman4muarateweh.sch.id/2021/06/pc.html' itemprop='url'><span itemprop='name'>?_profil</span></a>
      </li>
      
-         <li>
-       <a href='https://www.sman4muarateweh.sch.id/search/label/buku' itemprop='url'><span itemprop='name'>🕮 buku</span></a>
-     </li>
 
+ <li>
+  <a href='https://ecard.moqbit.com' itemprop='url' target='_blank'><span itemprop='name'>&gt;_kartu pelajar</span></a>
+</li>
 
+ <li>
+  <a href='https://www.sman4muarateweh.sch.id/2014/07/eradio.html' itemprop='url' target='_blank'><span itemprop='name'>e_radio</span></a>
+</li>
 
-
-     
+  
+  
      <li>
-       <a href='https://www.sman4muarateweh.sch.id/2022/03/kanal-media-sosial.html' itemprop='url'><span itemprop='name'>@ kanal</span></a>
+       <a href='https://www.sman4muarateweh.sch.id/2022/03/kanal-media-sosial.html' itemprop='url'><span itemprop='name'>@_kontak</span></a>
      </li>
-    
-
-    <li>
-       <a href='https://www.sman4muarateweh.sch.id/2023/03/mohon-maafmasih-dalam-peremajaancoba.html' itemprop='url'><span itemprop='name'>&#9178; lainnya</span></a>
-     </li>
-     
-   
-
    </ul>
+  
    <div class='search-icon'>
       <a href='#searchca'><i class='fa fa-search'/></a>
    </div>
+ 
 </nav>
+  
+  
 <div id='searchca'>
    <form action='/search' id='search-form' method='get'>
       <input name='q' placeholder='pencarian..' type='search' value=''/>
@@ -608,25 +615,154 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 </div>
 </header>
 <div/>
-  <div id='hero-section'>
-    <div/>
-<ul class='bg-bubbles'><li/><li/><li/><li/><li/><li/><li/><li/><li/><li/></ul>
-    
-    
-    
 
-    
-       <img alt='google/blogger' height='20' src='https://disperkimtan.kalteng.go.id/wp-content/uploads/2017/09/Logo-Provinsi-Kalimantan-Tengah.png' width='50'/>  
+  
+  <br/> <br/><br/>
+<p class='banner_101' style='text-align: center; font-size: 70%; display: none;'>Halo, Selamat datang disitus SMAN 4 Muara Teweh<br/></p>
+
+
+
+
+
+<div class='mobile-navbar'>
+    <a href='https://sman4muarateweh.sch.id'>
+        &#8962; <br/>beranda
+    </a>
+    <a href='https://www.sman4muarateweh.sch.id/2021/06/pc.html'>
+        ?<br/>profil
+    </a>
+    <a href='#searchca'>
+        &#8981;<br/>cari
+    </a>
+
+    <a href='https://www.sman4muarateweh.sch.id/2022/03/kanal-media-sosial.html'>
+        @<br/>kontak
+    </a>
+
+    <a href='https://www.sman4muarateweh.sch.id/2023/01/lainnya.html'>
+        &gt;_<br/>lainnya
+    </a>
+</div>
+
+<style>
+/* Menyembunyikan navbar pada perangkat dengan lebar layar lebih dari 768px (desktop) */
+@media screen and (min-width: 768px) {
+    .mobile-navbar {
+        display: none;
+    }
+}
+
+/* Menampilkan navbar hanya di perangkat mobile */
+@media screen and (max-width: 666px) {
+    .mobile-navbar {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: inherit;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 4px 4px;
+    }
+
+    .mobile-navbar a {
+        color: inherit;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 15px;
+        font-size: 14px;
+    }
+
+    .mobile-navbar i {
+        font-size: 8px;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: -14px;
+    }
+
+    .mobile-navbar a:hover {
+        color: #66ccff;
+    }
+}
+</style>
+
+<style>
+  
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#searchca.open {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .banner_101.show {
+    display: block;
+    opacity: 1;
+    animation: fadeInUp 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .lunar-wrapper#lunarpages {
+    opacity: 0;
+    animation: fadeInDown 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+</style>
+
+<script>
+  document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    var currentPage = window.location.href;
+    var banner = document.querySelector(&#39;.banner_101&#39;);
+    var lunarWrapper = document.querySelector(&#39;.lunar-wrapper#lunarpages&#39;);
+
  
-           <img alt='sekolah penggerak' height='100' src='https://fivaldicyberstudio.files.wordpress.com/2022/01/logo-sekolah-penggerak-4081_1371.png' width='150'/>  
+    if (currentPage === &#39;https://www.sman4muarateweh.sch.id/&#39; || currentPage === &#39;https://www.sman4muarateweh.sch.id/?m=1&#39;) {
+      banner.style.display = &#39;block&#39;; 
+      banner.classList.add(&#39;show&#39;); 
+    } else {
+      banner.style.display = &#39;none&#39;; 
+    }
+    lunarWrapper.style.opacity = &#39;0&#39;;
+    lunarWrapper.style.animation = &#39;fadeInDown 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards&#39;;
+  });
+</script>
 
-    
-               <img alt='google/blogger' height='40' src='https://blogger.googleusercontent.com/img/a/AVvXsEi_kKEmgjyfG6YEB-Q9nXLMq7lS-mm4OZBlVqIpcIi748iTLKWmEna1PRKpL-L9uF3Kgd2BR5e93TkrrEshbBGP2kfo2FnUUz-Y00jy0KxpjTV8PJRQl-KJ2bNlNc9mBjSWv9d7rs4sBKhjfexnHa47R_TQbnkG0im9U7ModTWMhul_l43_uWDM9RTdcQ=s300' width='70'/>
-    
-    
-    
 
-  </div>
+
+
+
+
+
+
+
   
 <div class='lunar-wrapper' id='lunarpages'>
 <div class='site-contentindz' id='contentindz'>
@@ -691,7 +827,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
     </div>
 <div class='clear'/>
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
-<!-- navigation -->
+
 <b:include name='nextprev'/>
 </b:if>
     <b:include name='feedLinks'/>
@@ -747,6 +883,34 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
   <p class='comment-footer'>
     <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' target='_blank'><data:post.createLinkLabel/></a>
   </p>
+</b:includable>
+    <b:includable id='blogThisShare'>
+  <b:with value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
+</b:includable>
+    <b:includable id='bylineByName' var='byline'>
+  <b:switch var='data:byline.name'>
+  <b:case value='share'/>
+    <b:include cond='data:post.shareUrl' name='postShareButtons'/>
+  <b:case value='comments'/>
+    <b:include cond='data:post.allowComments' name='postCommentsLink'/>
+  <b:case value='location'/>
+    <b:include cond='data:post.location' name='postLocation'/>
+  <b:case value='timestamp'/>
+    <b:include cond='not data:view.isPage' name='postTimestamp'/>
+  <b:case value='author'/>
+    <b:include name='postAuthor'/>
+  <b:case value='labels'/>
+    <b:include cond='data:post.labels' name='postLabels'/>
+  <b:case value='icons'/>
+    <b:include cond='data:post.emailPostUrl' name='emailPostIcon'/>
+  </b:switch>
+</b:includable>
+    <b:includable id='bylineRegion' var='regionItems'>
+  <b:loop values='data:regionItems' var='byline'>
+    <b:include data='byline' name='bylineByName'/>
+  </b:loop>
 </b:includable>
     <b:includable id='comment-form' var='post'>
         <div class='comment-form'>
@@ -863,7 +1027,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
             <div class='comment_avatar'>
                <img alt='avatar' expr:src='data:comment.authorAvatarSrc' expr:title='data:comment.author'/>
             </div>
-            <a class='comment_reply' expr:href='&quot;#r_&quot;+data:comment.anchorName' expr:id='&quot;r&quot;+data:comment.anchorName' onclick='javascript:Display_Reply_Form(this)' title='Balas'>Balas</a>
+            <a class='comment_reply' expr:href='&quot;#r_&quot;+data:comment.anchorName' expr:id='&quot;r&quot;+data:comment.anchorName' onclick='javascript:Display_Reply_Form(this)' title='Balas'>balas</a>
          </div>
          <div class='clear'/>
          </div>
@@ -950,71 +1114,43 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
          </div>
    </b:if>
    </div>
-   <script type='text/javascript'>
-      //<![CDATA[
-      if (typeof(jQuery) == 'undefined') {
-      //output the script (load it from google api)
-      document.write("<scr" + "ipt type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js\"></scr" + "ipt>");
-      }
-      //]]>
-   </script>
-   <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
-      <script type='text/javascript'>
-        <b:if cond='data:post.numComments != 0'>
-             var Items = <data:post.commentJso/>;
-             var Msgs = <data:post.commentMsgs/>;
-             var Config = <data:post.commentConfig/>;
-            <b:else/>
-             var Items = {};
-             var Msgs = {};
-             var Config = {&#39;maxThreadDepth&#39;:&#39;0&#39;};
-            </b:if>
-           //<![CDATA[
-           //Global setting
-            Config.maxThreadDepth = 6;//Kedalaman tingkat threaded comment
-            Display_Emo = true;//Tampilkan emoticon? ketik "false" untuk menyembunyikan
-            Replace_Youtube_Link = false;//Embed video YouTube, ketik "false" untuk mendisable
-            Replace_Image_Link = false;//Auto replace link image,  ketik "false" untuk mendisable.
-                                    Replace_Force_Tag = false;//Auto replace virtual tag contoh: [pre] menjadi <pre>, dan [/pre] menjadi </pre>, apabila salah menulis, tidak akan berfungsi
-            Replace_Image_Ext = ['JPG', 'GIF', 'PNG', 'BMP'];//(support: jpg, gif, png, bmp),hanya berfungsi apabila Replace_Image_Link=true
-            //Pengaturan Emoticon
-            Emo_List = [
-      ':)'  	,'https://twemoji.maxcdn.com/36x36/1f600.png',
-      ':('  	,'https://twemoji.maxcdn.com/36x36/1f615.png',
-      'hihi'  ,'https://twemoji.maxcdn.com/36x36/1f601.png',
-      ':-)'  	,'https://twemoji.maxcdn.com/36x36/1f60f.png',
-      ':D'  	,'https://twemoji.maxcdn.com/36x36/1f603.png',
-      '=D'  	,'https://twemoji.maxcdn.com/36x36/1f62c.png',
-      ':-d'  	,'https://twemoji.maxcdn.com/36x36/1f604.png',
-      ';('  	,'https://twemoji.maxcdn.com/36x36/1f61e.png',
-      ';-('  	,'https://twemoji.maxcdn.com/36x36/1f62d.png',
-      '@-)'   ,'https://twemoji.maxcdn.com/36x36/1f616.png',
-      ':P'  	,'https://twemoji.maxcdn.com/36x36/1f61c.png',
-      ':o'	,'https://twemoji.maxcdn.com/36x36/1f62e.png',     
-      ':&gt;)','https://twemoji.maxcdn.com/36x36/1f606.png',     
-      '(o)'	,'https://twemoji.maxcdn.com/36x36/1f609.png',     
-      ':p'	,'https://twemoji.maxcdn.com/36x36/1f614.png',     
-      '(p)'	,'https://twemoji.maxcdn.com/36x36/1f619.png', 
-      ':-s'	,'https://twemoji.maxcdn.com/36x36/1f625.png',
-      '(m)'	,'https://twemoji.maxcdn.com/36x36/1f620.png',
-      '8-)'	,'https://twemoji.maxcdn.com/36x36/1f60e.png',
-      ':-t'	,'https://twemoji.maxcdn.com/36x36/1f624.png',
-      ':-b'	,'https://twemoji.maxcdn.com/36x36/1f634.png',
-      'b-('	,'https://twemoji.maxcdn.com/36x36/1f635.png',
-      ':-#'	,'https://twemoji.maxcdn.com/36x36/1f637.png',
-      '=p~'	,'https://twemoji.maxcdn.com/36x36/1f35c.png',
-      'x-)'	,'https://twemoji.maxcdn.com/36x36/1f60d.png',
-      '(k)'	,'https://twemoji.maxcdn.com/36x36/1f496.png',
-            ];
-                                    Force_Tag = [
-                                        '[pre]','<pre>',
-                                        '[/pre]','</pre>',
-                                        '<pre class="brush: plain; title: ; notranslate" title="">','&lt;code&gt;',
-                                        '</pre>','</code>'
-                                    ];
-      eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('3 q=\'.W\';3 1a=$(\'#N-Y\').B(\'y\');u 1w(H){3 1h=\' \\n\\r\\t\\f\\2p\\1S\\1T\\1U\\24\\25\\26\\27\\2e\\2h\\2k\\2m\\2n\\2u\\2y\\2z\\2A\\2F\\1L\\1N\\1O\\1P\\1Q\';G(3 i=0;i<H.5;i++){b(1h.g(H.1V(i))!=-1){H=H.d(0,i);11}}C H}$(\'#28 .1B p\').k(u(D,7){b(2r){3 m=\'1g://13.Z.X/1t?v=\';3 8=7.g(m);F(8!=-1){1H=7.d(8);K=1w(1H);3 1c=K.g(\'&\');3 T=\'\';b(1c==-1){T=K.d(m.5)}1e{T=K.d(m.5,1c)}3 1j=\'<1k I="1W" y="1g://13.Z.X/1X/\'+T+\'?1Y=1" 20="0" 21></1k>\';7=7.d(0,8)+1j+7.d(8+K.5);8=7.g(m);b(8==-1){m=\'22://13.Z.X/1t?v=\';8=7.g(m)}}}b(23){3 1d=\'\';3 x=7;G(3 i=0;i<1z.5;i++){3 m=\'.\'+1z[i];3 o=x.E();3 8=o.g(m);F(8!=-1){l=x.d(0,8+m.5);o=l.E();3 w=\'2j://\';3 z=o.g(w);3 L=\'\';F(z!=-1){L=w.R();l=l.d(z+w.5);o=l.E();z=o.g(w)}w=\'1K://\';o=l.E();z=o.g(w);F(z!=-1){L=w.R();l=l.d(z+w.5);o=l.E();z=o.g(w)}b(L==\'\'||l.5<6){11}l=L+l;1d+=x.d(0,8+m.5-l.5)+\'<S y="\'+l+\'" I="2s"/>\';x=x.d(8+m.5);o=x.E();8=o.g(m)}}7=1d+x}b(1m){3 5=A.5;b(5%2==1){5--}G(3 i=0;i<5;i+=2){3 V=\'<S y="\'+A[i+1]+\'" I="1x"/>\';8=7.g(A[i]);F(8!=-1){7=7.d(0,8)+V+7.d(8+A[i].5);8=7.g(A[i])}}}b(2G){3 5=U.5;b(5%2==1){5--}G(3 i=0;i<5;i+=2){F(1){3 x=7.R();8=x.g(U[i]);b(8!=-1){7=7.d(0,8)+U[i+1]+7.d(8+U[i].5)}1e{11}}}}C 7});$(\'.1M\').k(u(D,7){b(1m){3 5=A.5;b(5%2==1){5--}3 15=\'\';G(3 i=0;i<5;i+=2){3 1C=\'<1F>\'+A[i]+\'</1F>\';3 V=\'<S y="\'+A[i+1]+\'" I="1x"/>\';15+=\'<M I="1R">\'+V+1C+\'</M>\'}C 15}});$(\'.1f .1B p\').k(u(i,h){10=h.R();D=10.g(\'@<a 12="#c\');b(D!=-1){14=10.g(\'</a>\',D);b(14!=-1){h=h.d(0,D)+h.d(14+4)}}C h});u 1l(j){r=j.g(\'c\');b(r!=-1)j=j.d(r+1);C j}u 1n(j){j=\'&1Z=\'+j+\'#%1o\';1p=1a.1q(/#%1o/,j);C 1p}u 1r(){k=$(q).k();$(q).k(\'\');q=\'.W\';$(q).k(k);$(\'#N-Y\').B(\'y\',1a)}u 1s(e){j=$(e).B(\'16\');j=1l(j);k=$(q).k();b(q==\'.W\'){1u=\'<a 12="#1v" 29="1r()">\'+2a.2b+\'</a><a 2c="1v"/>\';$(q).k(1u)}1e{$(q).k(\'\')}q=\'#2d\'+j;$(q).k(k);$(\'#N-Y\').B(\'y\',1n(j))}17=2f.2g.12;18=\'#N-2i\';19=17.g(18);b(19!=-1){1y=17.d(19+18.5);1s(\'#2l\'+1y)}G(3 i=0;i<O.5;i++){b(\'1A\'2o O[i]){3 j=O[i].1A;3 1b=2q($(\'#c\'+j+\':P\').B(\'1D-1E\'));$(\'#c\'+j+\' .2t:P\').k(u(D,7){3 J=O[i].16;b(1b>=2v.2w){$(\'#c\'+J+\':P .2x\').1G()}3 Q=$(\'#c\'+J+\':P\').k();Q=\'<M I="1f" 16="c\'+J+\'" 1D-1E="\'+(1b+1)+\'">\'+Q+\'</M>\';$(\'#c\'+J).1G();C(7+Q)})}}3 1I=$("#2B");1I.2C(\'.2D S\').2E(u(){3 1J=$(1i).B(\'y\');$(1i).2H().B(\'y\',1J.1q(/\\/s[0-9]+(\\-c)?\\//,"/2I-c/"))});',62,169,'|||var||length||oldhtml|check_index|||if||substring|||indexOf|||par_id|html|img_src|search_key||upper_html||Cur_Cform_Hdr||||function||http_search|temp_html|src|find_http|Emo_List|attr|return|index|toUpperCase|while|for|str|class|child_id|yt_link|save_http|div|comment|Items|first|child_html|toLowerCase|img|yt_code|Force_Tag|img_html|comment_form|com|editor|youtube|temp|break|href|www|index_tail|newhtml|id|cur_url|search_formid|search_index|Cur_Cform_Url|par_level|yt_code_index|save_html|else|comment_wrap|http|whitespace|this|yt_video|iframe|Valid_Par_Id|Display_Emo|Cform_Ins_ParID|7B|n_cform_url|replace|Reset_Comment_Form|Display_Reply_Form|watch|reset_html|origin_cform|trim|comment_emo|ret_id|Replace_Image_Ext|parentId|comment_body|img_code|data|level|span|remove|ht|avatar|ava|HTTPS|u200a|comment_emo_list|u200b|u2028|u2029|u3000|item|x5d|x7c|x7d|charAt|comment_youtube|embed|autohide|parentID|frameborder|allowfullscreen|https|Replace_Image_Link|x3c|x3e|x0b|xa0|comment_block|onclick|Msgs|addComment|name|r_f_c|u2000|window|location|u2001|form_|HTTP|u2002|rc|u2003|u2004|in|x5b|parseInt|Replace_Youtube_Link|comment_img|comment_child|u2005|Config|maxThreadDepth|comment_reply|u2006|u2007|u2008|comments|find|comment_avatar|each|u2009|Replace_Force_Tag|show|s45'.split('|'),0,{}));
-      //]]>
-   </script>
+<script type='text/javascript'>
+//<![CDATA[
+    if (typeof(jQuery) == 'undefined') {
+        document.write("<scr" + "ipt type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js\"></scr" + "ipt>");
+    }
+//]]>
+</script>
+
+</b:includable>
+    <b:includable id='commentsLink'>
+  <a class='comment-link' expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+    <b:if cond='data:post.numberOfComments &gt; 0'>
+      <b:message name='messages.numberOfComments'>
+        <b:param expr:value='data:post.numberOfComments' name='numComments'/>
+      </b:message>
+    <b:else/>
+      <data:messages.postAComment/>
+    </b:if>
+  </a>
+</b:includable>
+    <b:includable id='commentsLinkIframe'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+    <b:includable id='emailPostIcon'>
+  <span class='byline post-icons'>
+    <!-- email post links -->
+    <span class='item-action'>
+      <a expr:href='data:post.emailPostUrl' expr:title='data:messages.emailPost'>
+        <b:include data='{ iconClass: &quot;touch-icon sharing-icon&quot; }' name='emailIcon'/>
+      </a>
+    </span>
+  </span>
+</b:includable>
+    <b:includable id='facebookShare'>
+  <b:with value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
 </b:includable>
     <b:includable id='feedLinks'>
   <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
@@ -1033,6 +1169,32 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 </b:includable>
     <b:includable id='feedLinksBody' var='links'>
 </b:includable>
+    <b:includable id='footerBylines'>
+  <b:if cond='data:widgets.Blog.first.footerBylines'>
+    <b:loop index='i' values='data:widgets.Blog.first.footerBylines' var='region'>
+      <b:if cond='not data:region.items.empty'>
+        <div expr:class='&quot;post-footer-line post-footer-line-&quot; + (data:i + 1)'>
+          <b:with value='&quot;footer-&quot; + (data:i + 1)' var='regionName'>
+            <b:include data='region.items' name='bylineRegion'/>
+          </b:with>
+        </div>
+      </b:if>
+    </b:loop>
+  </b:if>
+</b:includable>
+    <b:includable id='googlePlusShare'>
+</b:includable>
+    <b:includable id='headerByline'>
+  <b:if cond='data:widgets.Blog.first.headerByline'>
+    <div class='post-header'>
+      <div class='post-header-line-1'>
+        <b:with value='&quot;header-1&quot;' var='regionName'>
+          <b:include data='data:widgets.Blog.first.headerByline.items' name='bylineRegion'/>
+        </b:with>
+      </div>
+    </div>
+  </b:if>
+</b:includable>
     <b:includable id='iframe_comments' var='post'>
   <b:if cond='data:post.allowComments'>
     <script expr:src='data:post.commentSrc' type='text/javascript'/>
@@ -1042,6 +1204,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
     </b:if>
   </b:if>
 </b:includable>
+    <b:includable id='linkShare'>
+  <b:with value='&quot;window.prompt(\&quot;Copy to clipboard: Ctrl+C, Enter\&quot;, \&quot;&quot; + data:originalUrl + &quot;\&quot;); return false;&quot;' var='onclick'>
+    <b:include name='platformShare'/>
+  </b:with>
+</b:includable>
     <b:includable id='mobile-index-post' var='post'/>
     <b:includable id='mobile-main' var='top'/>
     <b:includable id='mobile-nextprev'/>
@@ -1050,12 +1217,12 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
       <span id='blog-pager-newer-link'>
-      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><i aria-hidden='true' class='fa fa-angle-left'/> Sebelumnya</a>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><i aria-hidden='true' class='fa fa-angle-left'/> sebelumnya</a>
       </span>
     </b:if>
     <b:if cond='data:olderPageUrl'>
       <span id='blog-pager-older-link'>
-      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'> Selanjutnya<i aria-hidden='true' class='fa fa-angle-right'/></a>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'> Next<i aria-hidden='true' class='fa fa-angle-right'/></a>
       </span>
     </b:if>
     <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
@@ -1066,6 +1233,21 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
     </b:if>
   </div>
   <div class='clear'/>
+</b:includable>
+    <b:includable id='otherSharingButton'>
+  <span class='sharing-platform-button sharing-element-other' expr:aria-label='data:messages.shareToOtherApps.escaped' expr:data-url='data:originalUrl' expr:title='data:messages.shareToOtherApps.escaped' role='menuitem' tabindex='-1'>
+    <b:with value='{key: &quot;sharingOther&quot;}' var='platform'>
+      <b:include name='sharingPlatformIcon'/>
+    </b:with>
+    <span class='platform-sharing-text'><data:messages.shareOtherApps.escaped/></span>
+  </span>
+</b:includable>
+    <b:includable id='platformShare'>
+  <a expr:class='&quot;goog-inline-block sharing-&quot; + data:platform.key' expr:data-url='data:originalUrl' expr:href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:onclick='data:onclick ? data:onclick : &quot;&quot;' expr:title='data:platform.shareMessage' target='_blank'>
+    <span class='share-button-link-text'>
+      <data:platform.shareMessage/>
+    </span>
+  </a>
 </b:includable>
     <b:includable id='post' var='post'>
    <article class='post hentry' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
@@ -1078,7 +1260,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
       </b:if>
       <div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
          <div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
-            <meta content='https://4.bp.blogspot.com/-dUq0s-rwiwM/WThXnr_pIdI/AAAAAAAABGU/qXbzHQlfjXcbF1IFLknSfT2b3FMTwi1BgCLcB/s1600/PixModel.png' itemprop='url'/>
+            <meta content='https://blogger.googleusercontent.com/img/a/AVvXsEhqfQfcflaZXk17dJNu7aUFpfSCgpveobqwUvAZtVcb4hhIy35FxMnlRhi5lRPVt4WEdX9hpxvETr2T6rh2f6QOtpDIkrnwUA2IGhvCZQa59Mzn_26V7kUebYGmoQb4-lMmaBjBTBb1bNhIbk0JeGajTx5XKKqW8x2z9CvyOUNygrX9_2neQbMNYAH-OdOe=s221' itemprop='url'/>
             <meta content='500' itemprop='width'/>
             <meta content='500' itemprop='height'/>
          </div>
@@ -1276,64 +1458,14 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
             </b:if>
          </b:if>
       </b:if>
-      <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-         <div class='lunar-postmeta'>
-            <b:if cond='data:top.showAuthor'>
-               <span class='post-author vcard'>
-                  <i class='fa fa-user-circle'/> 
-                  <b:if cond='data:post.authorProfileUrl'>
-                     <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
-                        <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
-                        <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
-                           <span itemprop='name'>
-                              <data:post.author/>
-                           </span>
-                        </a>
-                     </span>
-                     <b:else/>
-                     <span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
-                        <span itemprop='name'>
-                           <data:post.author/>
-                        </span>
-                     </span>
-                  </b:if>
-               </span>
-               &amp;nbsp;&amp;nbsp;
-            </b:if>
-            <b:if cond='data:top.showTimestamp'>
-               <i class='fa fa-clock-o'/> 
-               <b:if cond='data:post.url'>
-                  <meta expr:content='data:post.canonicalUrl' itemprop='url'/>
-                  <span itemprop='dateModified'>
-                     <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
-                        <span class='published updated' expr:title='data:post.timestampISO8601' itemprop='datePublished'>
-                           <data:post.timestamp/>
-                        </span>
-                     </a>
-                  </span>
-               </b:if>
-               &amp;nbsp;&amp;nbsp;
-            </b:if>
-            <b:if cond='data:blog.pageType == &quot;item&quot;'>
-               <b:if cond='data:post.labels'>
-                  <i class='fa fa-folder-open'/> 
-                  <b:loop values='data:post.labels' var='label'>
-                     <a expr:href='data:label.url' rel='tag'>
-                        <data:label.name/>
-                     </a>
-                     <b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if>
-                  </b:loop>
-                  &amp;nbsp;&amp;nbsp;
-               </b:if>
-            </b:if>
-         </div>
-      </b:if>
+        
       <div class='post-header-line-1'/>
       <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
          <b:if cond='data:blog.pageType != &quot;item&quot;'>
             <div itemprop='description articleBody'>
                <div expr:id='&quot;summary&quot; + data:post.id'>
                   <data:post.body/>
+             
                </div>
                <script type='text/javascript'>createSnippet(&quot;summary<data:post.id/>&quot;);</script>
             </div>
@@ -1358,8 +1490,131 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
       <b:include name='nextprev'/>
    </b:if>
 </b:includable>
+    <b:includable id='postAuthor'>
+  <span class='byline post-author vcard'>
+    <span class='post-author-label'>
+      <data:byline.label/>
+    </span>
+    <span class='fn'>
+      <b:if cond='data:post.author.profileUrl'>
+        <meta expr:content='data:post.author.profileUrl'/>
+        <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+          <span><data:post.author.name/></span>
+        </a>
+      <b:else/>
+        <span><data:post.author.name/></span>
+      </b:if>
+    </span>
+  </span>
+</b:includable>
+    <b:includable id='postJumpLink' var='post'>
+  <div class='jump-link flat-button'>
+    <a expr:href='data:post.url fragment &quot;more&quot;' expr:title='data:post.title'>
+      <b:eval expr='data:blog.jumpLinkMessage'/>
+    </a>
+  </div>
+</b:includable>
+    <b:includable id='postLabels'>
+  <span class='byline post-labels'>
+    <span class='byline-label'><data:byline.label/></span>
+    <b:loop index='i' values='data:post.labels' var='label'>
+      <a expr:href='data:label.url' rel='tag'>
+        <data:label.name/>
+      </a>
+    </b:loop>
+  </span>
+</b:includable>
+    <b:includable id='postLocation'>
+  <span class='byline post-location'>
+    <data:byline.label/>
+    <a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
+  </span>
+</b:includable>
+    <b:includable id='postMetadataJSONImage'>
+  &quot;image&quot;: {
+    &quot;@type&quot;: &quot;ImageObject&quot;,
+    <b:if cond='data:post.featuredImage.isResizable'>
+    &quot;url&quot;: &quot;<b:eval expr='resizeImage(data:post.featuredImage, 1200, &quot;1200:630&quot;)'/>&quot;,
+    &quot;height&quot;: 630,
+    &quot;width&quot;: 1200
+    <b:else/>
+    &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/w1200/&quot;,
+    &quot;height&quot;: 348,
+    &quot;width&quot;: 1200
+    </b:if>
+  },
+</b:includable>
+    <b:includable id='postMetadataJSONPublisher'>
+ &quot;publisher&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;Blogger&quot;,
+    &quot;logo&quot;: {
+      &quot;@type&quot;: &quot;ImageObject&quot;,
+      &quot;url&quot;: &quot;https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEgfMvYAhAbdHksiBA24JKmb2Tav6K0GviwztID3Cq4VpV96HaJfy0viIu8z1SSw_G9n5FQHZWSRao61M3e58ImahqBtr7LiOUS6m_w59IvDYwjmMcbq3fKW4JSbacqkbxTo8B90dWp0Cese92xfLMPe_tg11g/h60/&quot;,
+      &quot;width&quot;: 206,
+      &quot;height&quot;: 60
+    }
+  },
+</b:includable>
     <b:includable id='postQuickEdit' var='post'/>
+    <b:includable id='postShareButtons'>
+  <div class='byline post-share-buttons goog-inline-block'>
+    <b:with value='data:sharingId ?: ((data:widget.instanceId ?: &quot;sharing&quot;) + &quot;-&quot; + (data:regionName ?: &quot;byline&quot;) + &quot;-&quot; + data:post.id)' var='sharingId'>
+      <!-- Note: 'sharingButtons' includable is from the default Sharing widget markup. -->
+      <b:include data='{                                                sharingId: data:sharingId,                                                originalUrl: data:post.url,                                                platforms: data:this.sharing.platforms,                                                shareUrl: data:post.shareUrl,                                                shareTitle: data:post.title,                                              }' name='sharingButtons'/>
+    </b:with>
+  </div>
+</b:includable>
+    <b:includable id='postTimestamp'>
+  <span class='byline post-timestamp'>
+    <data:byline.label/>
+    <b:if cond='data:post.url'>
+      <meta expr:content='data:post.url.canonical'/>
+      <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
+        <time class='published' expr:datetime='data:post.date.iso8601' expr:title='data:post.date.iso8601'>
+          <data:post.date/>
+        </time>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
     <b:includable id='shareButtons' var='post'/>
+    <b:includable id='sharingButton'>
+  <span expr:aria-label='data:platform.shareMessage' expr:class='&quot;sharing-platform-button sharing-element-&quot; + data:platform.key' expr:data-href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:data-url='data:originalUrl' expr:title='data:platform.shareMessage' role='menuitem' tabindex='-1'>
+    <b:include name='sharingPlatformIcon'/>
+    <span class='platform-sharing-text'><data:platform.name/></span>
+  </span>
+</b:includable>
+    <b:includable id='sharingButtonContent'>
+  <div class='flat-icon-button ripple'>
+    <b:include name='shareIcon'/>
+  </div>
+</b:includable>
+    <b:includable id='sharingButtons'>
+  <div class='sharing' expr:aria-owns='&quot;sharing-popup-&quot; + data:sharingId' expr:data-title='data:shareTitle'>
+    <button class='sharing-button touch-icon-button' expr:aria-controls='&quot;sharing-popup-&quot; + data:sharingId' expr:aria-label='data:messages.share.escaped' expr:id='&quot;sharing-button-&quot; + data:sharingId' role='button'>
+      <b:include name='sharingButtonContent'/>
+    </button>
+    <b:include name='sharingButtonsMenu'/>
+  </div>
+</b:includable>
+    <b:includable id='sharingButtonsMenu'>
+  <div class='share-buttons-container'>
+    <ul aria-hidden='true' class='share-buttons hidden' expr:aria-label='data:messages.share.escaped' expr:id='&quot;sharing-popup-&quot; + data:sharingId' role='menu'>
+      <b:loop values='(data:platforms ?: data:blog.sharing.platforms) filter (p =&gt; p.key not in {&quot;blogThis&quot;})' var='platform'>
+        <li>
+          <b:include name='sharingButton'/>
+        </li>
+      </b:loop>
+      <li aria-hidden='true' class='hidden'>
+        <b:include name='otherSharingButton'/>
+      </li>
+    </ul>
+  </div>
+</b:includable>
+    <b:includable id='sharingPlatformIcon'>
+  <b:include data='{ iconClass: (&quot;touch-icon sharing-&quot; + data:platform.key) }' expr:name='data:platform.key + &quot;Icon&quot;'/>
+</b:includable>
     <b:includable id='status-message'/>
     <b:includable id='threaded-comment-form' var='post'>
   <div class='comment-form'>
@@ -1654,7 +1909,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
             </div>
             <div class='clear'/>
           <b:else/>
-            <!-- (4) Show snippets and thumbnails -->
+
             <div class='item-content'>
               <b:if cond='data:post.thumbnail'>
                 <div class='item-thumbnail'>
@@ -1679,7 +1934,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
     <b:widget-settings>
       <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
       <b:widget-setting name='display'>CLOUD</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'><![CDATA[Editor's Picks,Mobile Search,SEO News,Social Media]]></b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'/>
       <b:widget-setting name='showType'>ALL</b:widget-setting>
       <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
     </b:widget-settings>
@@ -1753,10 +2008,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
   </div>
              <footer class='site-footerindz' id='downlunar' itemscope='itemscope' itemtype='https://schema.org/WPFooter' role='contentinfo'>
 <div class='site-infoku' role='contentinfo'>
-  <a expr:href='data:blog.homepageUrl'><data:blog.title/></a> @ <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <br/> didukung oleh <div class='lunar-credit'><a href='https://play.google.com/store/apps/dev?id=7489788643372725434' id='lunarwall' title='sman4muarateweh'>lunar</a>
+  <a expr:href='data:blog.homepageUrl'><data:blog.title/></a> @ <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <br/> didukung oleh <div class='lunar-credit'><a href='https://play.google.com/store/apps/dev?id=7489788643372725434' id='lunarwall' title='sman4muarateweh'/>
 
 
-    <br/>
+
+   
   </div>
 </div>
 </footer>
@@ -1778,89 +2034,26 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
                
              
 <div class='site-infoku' role='contentinfo'>
-    <a href='https://disdik.kalteng.go.id/' id='lunarwall' title='disdik Kalteng'><img alt='kemdikbud' height='48' src='https://disperkimtan.kalteng.go.id/wp-content/uploads/2017/09/Logo-Provinsi-Kalimantan-Tengah.png' width='48'/></a><br/>
-<br/>
+
+
+
+
+
+  
+      <img alt='logo_sman4muarateweh' height='20' src='https://blogger.googleusercontent.com/img/a/AVvXsEi_kKEmgjyfG6YEB-Q9nXLMq7lS-mm4OZBlVqIpcIi748iTLKWmEna1PRKpL-L9uF3Kgd2BR5e93TkrrEshbBGP2kfo2FnUUz-Y00jy0KxpjTV8PJRQl-KJ2bNlNc9mBjSWv9d7rs4sBKhjfexnHa47R_TQbnkG0im9U7ModTWMhul_l43_uWDM9RTdcQ=s300' width='20'/>
 
   <br/>
-  SMAN 4 Muara Teweh atau Sekolah Menengah Atas Negeri 4 Muara Teweh adalah sekolah yang berada di Muara Teweh,Barito Utara,Kalimantan Tengah,Indonesia. <br/><br/>
-      <img alt='logo_sman4muarateweh' height='20' src='https://blogger.googleusercontent.com/img/a/AVvXsEi_kKEmgjyfG6YEB-Q9nXLMq7lS-mm4OZBlVqIpcIi748iTLKWmEna1PRKpL-L9uF3Kgd2BR5e93TkrrEshbBGP2kfo2FnUUz-Y00jy0KxpjTV8PJRQl-KJ2bNlNc9mBjSWv9d7rs4sBKhjfexnHa47R_TQbnkG0im9U7ModTWMhul_l43_uWDM9RTdcQ=s300' width='20'/>
-  <a expr:href='data:blog.homepageUrl'><data:blog.title/></a> @ <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script>  
-
-  
-<br/>
-   <br/>
-
-    <a href='https://github.com/sman4muarateweh/'><img alt='logo_github_sman4muarateweh' height='34' src='https://static-00.iconduck.com/assets.00/github-emoji-2048x2021-w2ge0ghn.png' width='34'/></a>
-  <a href='https://www.google.co.id/search?q=sman4muarateweh'><img alt='logo_google_sman4muarateweh' height='34' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Google_Plus_logo_%282015-2019%29.svg/1200px-Google_Plus_logo_%282015-2019%29.svg.png' width='34'/></a>
-
-  
-    <a href='https://id.wikipedia.org/wiki/SMA_Negeri_4_Muara_Teweh'><img alt='logo_wiki_sman4muarateweh' height='34' src='https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png' width='34'/></a>
-  <a href='https://guru.kemdikbud.go.id/komunitas/xo92gRdQ0E?from=followed_community'><img alt='logo_k_pmm_sman4muarateweh' height='34' src='https://theme.zdassets.com/theme_assets/11435355/32b9faace10ccc5730d155434123b4c46d7ad8ce.png' width='34'/></a>
-  
-    <a href='https://twitter.com/sman4muarateweh'><img alt='logo_twitter_sman4muarateweh' height='34' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png' width='34'/></a>
-  <a href='https://discord.com/invite/WKX27mwbe4'><img alt='logo_discord_sman4muarateweh' height='34' src='https://cdn.freebiesupply.com/logos/large/2x/discord-logo-png-transparent.png' width='34'/></a>
-  
-   <a href='https://www.deviantart.com/sman4muarateweh'><img alt='logo_devianart_sman4muarateweh' height='34' src='https://images.vexels.com/media/users/3/137250/isolated/preview/faeefae02621730a25cb072755c6483a-deviantart-icon-logo.png' width='34'/></a>
-   <a href='https://www.pixiv.net/en/users/93657847'><img alt='logo_pixiv_sman4muarateweh' height='34' src='https://orig00.deviantart.net/72da/f/2015/183/9/f/pixiv_logo_icon_png_by_vampirehelenaharper-d8zog8c.png' width='34'/></a>
-  
-  <a href='https://www.bilibili.tv/en/space/1149145128'><img alt='logo_bilibili_sman4muarateweh' height='34' src='https://gamefinity.id/wp-content/uploads/2022/03/Logo-Bstation.png' width='34'/></a>
-  
- <a href='https://www.instagram.com/smafourmute/'><img alt='logo_instagram_sman4muarateweh' height='34' src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png' width='34'/></a>
-   <a href='https://www.facebook.com/smafourmute/'><img alt='logo_facebook_sman4muarateweh' height='34' src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png' width='34'/></a>
-
-     <a href='https://www.youtube.com/@sman4muarateweh'><img alt='logo_youtube_sman4muarateweh' height='34' src='https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png' width='34'/></a>
-  
-  <a href='https://www.tiktok.com/@sman4muarateweh'><img alt='logo_douyin_sman4muarateweh' height='34' src='https://pngimg.com/uploads/tiktok/tiktok_PNG7.png' width='34'/></a>
-  <a href='https://threads.net/@titian.ilmu'><img alt='logo_douyin_sman4muarateweh' height='34' src='https://play-lh.googleusercontent.com/G6jK9S77RN0laf9_6nhDo3AVxbRP9SgMmt8ZmQjKQ2hibn9xhOY-W5YFn_7stJD1CA=w240-h480-rw' width='34'/></a>
   
  
-  <br/>  
-  
-  
- 
-  
-<style>
-  .footer {
-    /* Sticky footer styles */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px; /* Adjust the height as desired */
-
-  }
-  
-  .footer-button {
-    /* Button styles */
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0096FF;
-    color: #fff; /* Replace with your preferred text color */
-    border-radius: 5px;
-    text-decoration: none;
-    /* Add any other styles as desired */
-  
-  }
-</style>
-
-<![CDATA[
-  // JavaScript code for the footer functionality
-  window.onload = function() {
-    var footer = document.getElementsByClassName('footer')[0];
-    var wrapper = document.getElementsByClassName('wrapper')[0];
-    var footerHeight = footer.offsetHeight + 'px';
-    wrapper.style.minHeight = 'calc(100vh - ' + footerHeight + ')';
-  };
-]]>
+   
+  <a expr:href='data:blog.homepageUrl' style='font-size: 70%;'>SMA Negeri 4 Muara Teweh @ <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script>  </a>
+ <br/>
+ <br/>
+ <br/>
 
 
-
-
-  <br/>  <br/>
-  <img src='https://moe-counter.glitch.me/get/@:sman4muarateweh?theme=rule34' width='30%'/>
-    <br/>
 </div>
 </footer>
-
 <div id='downfooter'/>
 <script type='text/javascript'>
 //<![CDATA[
