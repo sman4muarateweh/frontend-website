@@ -422,6 +422,9 @@ $(function(){$("#navigation").tinyNav({active:"active",header:"Menu"})});
         loadjQuery();
     }
 </script>
+<script>
+  document.body.innerHTML = document.body.innerHTML.replace(/\bsiswa\b/g, &#39;student&#39;);
+</script>
 
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
@@ -608,7 +611,8 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
   
 <div id='searchca'>
    <form action='/search' id='search-form' method='get'>
-      <input name='q' placeholder='pencarian..' type='search' value=''/>
+      <input name='q' placeholder='pencarian..' style='background-color: #66ccff;' type='search' value=''/>
+
       <input name='max-results' type='hidden' value='10'/>
    <button class='close' type='button'>&#215;</button>
    </form>
@@ -645,14 +649,14 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 </div>
 
 <style>
-/* Menyembunyikan navbar pada perangkat dengan lebar layar lebih dari 768px (desktop) */
+
 @media screen and (min-width: 768px) {
     .mobile-navbar {
         display: none;
     }
 }
 
-/* Menampilkan navbar hanya di perangkat mobile */
+
 @media screen and (max-width: 666px) {
     .mobile-navbar {
         position: fixed;
@@ -2048,6 +2052,10 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
    
   <a expr:href='data:blog.homepageUrl' style='font-size: 70%;'>SMA Negeri 4 Muara Teweh @ <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script>  </a>
  <br/>
+   <br/>
+    <a href='https://github.com/sman4muarateweh/frontend-website/commits' style='font-size: 70%;'>source code-log </a> |  <a href='https://www.sman4muarateweh.sch.id/2021/03/kebijakan-privasi.html' style='font-size: 70%;'>kebijakan privasi </a>
+ <br/>
+   <br/>
  <br/>
  <br/>
 
